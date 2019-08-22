@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Тест на знання української мови</title>
+    <body>
+        <h1>Тест на знання української мови</h1>
+        <hr>
+        <form method="POST" action="https://formspree.io/chrystynka159@gmail.com">
+            <p>Перед початком тесту:</p>
+            <ul>
+                <li>Зробіть собі запашну каву</li>
+                <li>Включіть музику</li>
+                <li>Розслабтеcь</li>
+            </ul>
+            <hr>
+            <figure>
+                <figcaption>
+                    <b>Включай</b>
+                </figcaption>
+                <br>
+                <audio controls src="music/mitteleurope-club-winner-flag.mp3">
+                    Your browser does not support the
+            <code>audio</code>
+                    element
+
+                </audio>
+            </figure>
+            <hr>
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <label for="surname">Ваше прізвище: </label>
+            <input type="text" name="surname" id="surname" required>
+            <br>
+            <label for="age">Ваш вік: </label>
+            <input type="number" min="1" max="100" name="age" id="age" required>
+            <br>
+            <label for="email">Ваша електронна адреса: </label>
+            <input type="text" name="email" id="email" required>
+            <br>
+            <label for="your-answer">Чи вивчаєш ти зараз українську мову?</label>
+            <input type="checkbox" name="language" id="your-answer">
+            <hr>
+            <label for="word-select">Суфікс -інн(я) має різне значення в словах рядка:</label>
+            <select id="word-select">
+                <option value="">--Вибери--</option>
+                <option value="first">носіння, говоріння</option>
+                <option value="second">гасіння, коріння</option>
+                <option value="third">ходіння, шарудіння</option>
+                <option value="fourth">терпіння, водіння</option>
+            </select>
+            <hr>
+            <label for="answer-selection">Антонімами є слова в рядку:</label>
+            <input list="possible-answers" id="answer-selection" name="answer-selection"/>
+            <datalist id="possible-answers">
+                <option value="постійний – сталий">
+                <option value="приємний – милий">
+                <option value="різниця – тотожність">
+                <option value="провісник – предтеча">
+            </datalist>
+            <hr>
+            <fieldset>
+                <legend>Вставним словосполученням ускладнено речення (розділові знаки пропущено)</legend>
+                <input type="radio" id="first" name="answer">
+                <label for="first">За теорією Ч. Дарвіна було знято кілька цікавих науково-популярних фільмів.</label>
+                <br>
+                <input type="radio" id="second" name="answer">
+                <label for="second">За теорією Ч. Дарвіна тривалий час уважно слідкували науковці в Кембриджі.</label>
+                <br>
+                <input type="radio" id="third" name="answer">
+                <label for="third">За теорією Ч. Дарвіна головною рушійною силою еволюції є природний добір.</label>
+                <br>
+                <input type="radio" id="fourth" name="answer">
+                <label for="fourth">За теорією Ч. Дарвіна з’явилися й інші пояснення чинників еволюції видів.</label>
+                <br>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend>Знак м’якшення треба писати на місці пропуску в усіх словах рядка</legend>
+                <input type="radio" id="1" name="answer">
+                <label for="first">мистец..кий, учител..ство, камін..чик</label>
+                <br>
+                <input type="radio" id="2" name="answer">
+                <label for="second">малесен..кий, одягаєт..ся, мен..ший</label>
+                <br>
+                <input type="radio" id="3" name="answer">
+                <label for="third">жмен..ці, винос..те, виріз..блений</label>
+                <br>
+                <input type="radio" id="4" name="answer">
+                <label for="fourth">він..чати, запоріз..кий, жен..шень
+</label>
+                <br>
+            </fieldset>
+            <hr>
+            <label for="select">На перший склад падає наголос у всіх словах, ОКРІМ:</label>
+            <select id="select">
+                <optgroup label="words">
+                    <option>причіп</option>
+                    <option>косий</option>
+                    <option>жалюзі</option>
+                    <option>випадок</option>
+                </optgroup>
+            </select>
+            <hr>
+            <label for="selection">Разом треба писати всі складні слова в рядку</label>
+            <select id="selection">
+                <optgroup label="-Вибери-">
+                    <option>фото/журналіст, високо/ефективний, екс/чемпіон</option>
+                    <option>супер/обкладинка, західно/європейський, мікро/схема</option>
+                    <option>кисло/молочний, суспільно/політичний, пів/кілометра</option>
+                    <option>мега/маркет, яскраво/жовтий, кілька/мільйонний</option>
+                    <option>перекоти/поле, відео/конференція, міні/готель</option>
+                </optgroup>
+            </select>
+            <hr>
+            <button type="button">Завершити і відправити</button>
+            <br>
+            <img src="pictures/p.jpg" width="400" height="400" alt="Have a nice day">
+            <cite>
+                <a href="https://www.facebook.com/chrystynka.shalaiska">Якщо забажаєш тест вищої складності,пиши мені:)</a>
+            </cite>
+        </form>
+    </body>
+</html>
